@@ -10,44 +10,44 @@ public class Main {
     Fornecedor fornecedor = new Fornecedor();
     Estoque estoque = new Estoque();
 
-    cliente.nomeCompleto = "Thiago Nathan Carvalho";
-    cliente.email = "thiagonathancarvalho-94@escolajardim.com.br";
-    cliente.telefone = "(84) 2533-3183";
-    cliente.endereco = "Travessa Santa Rita 775 Ponta Negra";
-    cliente.nascimento = LocalDate.of(1972, 8, 27);
+    cliente.setNomeCompleto("Thiago Nathan Carvalho");
+    cliente.setEmail("thiagonathancarvalho-94@escolajardim.com.br");
+    cliente.setTelefone("(84) 2533-3183");
+    cliente.setEndereco("Travessa Santa Rita 775 Ponta Negra");
+    cliente.setNascimento(LocalDate.of(1972, 8, 27));
 
-    vendedor.nomeCompleto = "Joaquim Nicolas Gael Barbosa";
-    vendedor.email = "joaquimnicolasgaelbarbosa_@djapan.com.br";
-    vendedor.salario = 2000;
-    vendedor.telefone = "(61) 2598-9754";
-    vendedor.nascimento = LocalDate.of(1992, 6, 2);
+    vendedor.setNomeCompleto("Joaquim Nicolas Gael Barbosa");
+    vendedor.setEmail("joaquimnicolasgaelbarbosa_@djapan.com.br");
+    vendedor.setSalario(2000);
+    vendedor.setTelefone("(61) 2598-9754");
+    vendedor.setNascimento(LocalDate.of(1992, 6, 2));
 
-    produto.nome = "iPhone 11";
-    produto.preco = 3734.19;
-    produto.categoria = "Celulares";
-    produto.descricao = "iPhone 11 Apple 64GB Branco 6,1” 12MP iOS";
-    produto.fabricante = "Apple";
+    produto.setNome("iPhone 11");
+    produto.setPreco(3734.19);
+    produto.setCategoria("Celulares");
+    produto.setDescricao("iPhone 11 Apple 64GB Branco 6,1” 12MP iOS");
+    produto.setFabricante("Apple");
 
-    estoque.produto = produto;
-    estoque.quantidade = 28;
-    estoque.categoria =  "Celulares";
+    estoque.setProduto(produto);
+    estoque.setQuantidade(28);
+    estoque.setCategoria( "Celulares");
 
-    venda.cliente = cliente;
-    venda.produto = produto;
-    venda.vendedor = vendedor;
-    venda.dataVenda = LocalDateTime.now();
-    venda.valorTotal = 3500;
+    venda.setCliente(cliente);
+    venda.setProduto(produto);
+    venda.setVendedor(vendedor);
+    venda.setDataVenda(LocalDateTime.now());
+    venda.setValorTotal(3500);
 
-    fornecedor.nomeContato = "Tereza Cristiane Adriana";
-    fornecedor.nomeEmpresa = "Líder Produtos";
-    fornecedor.email = "ana.lucia@lider.com.br";
-    fornecedor.endereco = "Rua Ana Lúcia Torres, 473 BA";
-    fornecedor.telefone = "(71) 3706-3788";
+    fornecedor.setNomeContato("Tereza Cristiane Adriana");
+    fornecedor.setNomeEmpresa("Líder Produtos");
+    fornecedor.setEmail("ana.lucia@lider.com.br");
+    fornecedor.setEndereco("Rua Ana Lúcia Torres, 473 BA");
+    fornecedor.setTelefone("(71) 3706-3788");
 
-    transportadora.nome = "Nexus Transportadora";
-    transportadora.cnpj = "05.229.720/0001-47";
-    transportadora.email = "contato@nexustransportadora.com";
-    transportadora.telefone = "(71) 99201-4094";
+    transportadora.setNome("Nexus Transportadora");
+    transportadora.setCnpj("05.229.720/0001-47");
+    transportadora.setEmail("contato@nexustransportadora.com");
+    transportadora.setTelefone("(71) 99201-4094");
 
 
   }
