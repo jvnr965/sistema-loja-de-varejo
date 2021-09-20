@@ -4,6 +4,12 @@ public class Transportadora {
   private String telefone;
   private String email;
 
+  public Transportadora(String nome, String cnpj, String email){
+    this.nome = nome;
+    this.cnpj = cnpj;
+    this.email = email;
+  }
+
   public String getCnpj() {
       return cnpj;
   }
@@ -18,18 +24,6 @@ public class Transportadora {
 
   public String getTelefone() {
       return telefone;
-  }
-
-  public void setCnpj(String cnpj) {
-      this.cnpj = cnpj;
-  }
-
-  public void setNome(String nome) {
-      this.nome = nome;
-  }
-
-  public void setEmail(String email) {
-      this.email = email;
   }
 
   public void setTelefone(String telefone) {

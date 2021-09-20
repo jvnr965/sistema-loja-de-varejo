@@ -5,9 +5,11 @@ public class Fornecedor{
   private String telefone;
   private String email;
 
-  public String getEmail() {
-      return email;
+  public Fornecedor(String nomeEmpresa, String email){
+    this.nomeEmpresa = nomeEmpresa;
+    this.email = email;
   }
+  
 
   public String getEndereco() {
       return endereco;
@@ -19,14 +21,6 @@ public class Fornecedor{
 
   public String getNomeContato() {
       return nomeContato;
-  }
-
-  public String getNomeEmpresa() {
-      return nomeEmpresa;
-  }
-
-  public void setEmail(String email) {
-      this.email = email;
   }
 
   public void setEndereco(String endereco) {
@@ -41,8 +35,12 @@ public class Fornecedor{
       this.nomeContato = nomeContato;
   }
 
-  public void setNomeEmpresa(String nomeEmpresa) {
-      this.nomeEmpresa = nomeEmpresa;
+
+  public String getNomeEmpresa(String nomeEmpresa){
+    return nomeEmpresa;
   }
 
+  public String getEmail(String email){
+    return email;
+  }
 }

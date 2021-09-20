@@ -3,8 +3,8 @@ public class Estoque {
   private int quantidade;
   private String categoria;
 
-  public void setProduto(Produto produto) {
-      this.produto = produto;
+  public Estoque(Produto produto){
+    this.produto = produto;
   }
 
   public void setQuantidade(int quantidade) {
@@ -19,12 +19,13 @@ public class Estoque {
       return quantidade;
   }
 
-  public Produto getProduto() {
-      return produto;
-  }
-
   public String getCategoria() {
       return categoria;
   }
 
+
+  public Produto getProduto(Produto produto){
+    return produto;
+  }
+  
 }

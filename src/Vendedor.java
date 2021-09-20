@@ -7,9 +7,10 @@ public class Vendedor {
   private String email;
   private String telefone;
 
-
-  public void setNomeCompleto(String nomeCompleto){
+  public Vendedor(String nomeCompleto, String email, String telefone){
     this.nomeCompleto = nomeCompleto;
+    this.email = email;
+    this.telefone = telefone;
   }
 
   public void setSalario(int salario){
@@ -19,15 +20,6 @@ public class Vendedor {
   public void setNascimento(LocalDate nascimento){
     this.nascimento = nascimento;
   }
-
-  public void setEmail(String email){
-    this.email = email;
-  }
-
-  public void setTelefone(String telefone){
-    this.telefone = telefone;
-  }
-
 
   public String getNomeCompleto(String nomeCompleto){
     return nomeCompleto;

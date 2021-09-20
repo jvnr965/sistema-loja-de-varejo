@@ -7,23 +7,11 @@ public class Venda{
   private float valorTotal;
   private LocalDateTime dataVenda;
 
-
-
-  public void setVendedor(Vendedor vendedor){
+  public Venda(Vendedor vendedor, Cliente cliente, Produto produto, float valorTotal){
     this.vendedor = vendedor;
-  }
-
-  public void setCliente(Cliente cliente){
     this.cliente = cliente;
-  }
-
-  public void setProduto(Produto produto){
-    this.produto = produto;
-  }
-
-  public void setValorTotal(float valorTotal){
     this.valorTotal = valorTotal;
-  }
+  } 
 
   public void setDataVenda(LocalDateTime dataVenda){
     this.dataVenda = dataVenda;

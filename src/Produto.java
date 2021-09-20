@@ -5,6 +5,11 @@ public class Produto{
   private String categoria;
   private String fabricante;
 
+  public Produto(String nome, String fabricante){
+    this.nome = nome;
+    this.fabricante = fabricante;
+  }
+
   public String getNome() {
       return nome;
   }
@@ -25,10 +30,6 @@ public class Produto{
       return fabricante;
   }
 
-  public void setNome(String nome) {
-      this.nome = nome;
-  }
-
   public void setPreco(Double preco) {
       this.preco = preco;
   }
@@ -41,7 +42,4 @@ public class Produto{
       this.descricao = descricao;
   }
 
-  public void setFabricante(String fabricante) {
-      this.fabricante = fabricante;
-  }
 }

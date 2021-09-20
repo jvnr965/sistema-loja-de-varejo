@@ -7,42 +7,42 @@ public class Cliente{
   private String email;
   private LocalDate nascimento;
 
-  public String getEmail() {
-      return email;
+  public Cliente(String nomeCompleto, String telefone, String email){
+    this.nomeCompleto = nomeCompleto;
+    this.telefone = telefone;
+    this.email = email;
   }
 
   public String getEndereco() {
       return endereco;
   }
 
-  public String getTelefone() {
-      return telefone;
-  }
-  public String getNomeCompleto() {
-      return nomeCompleto;
-  }
 
   public LocalDate getNascimento() {
       return nascimento;
   }
 
-  public void setEmail(String email) {
-      this.email = email;
-  }
 
   public void setEndereco(String endereco) {
       this.endereco = endereco;
   }
 
-  public void setTelefone(String telefone) {
-      this.telefone = telefone;
-  }
 
   public void setNascimento(LocalDate nascimento) {
       this.nascimento = nascimento;
   }
 
-  public void setNomeCompleto(String nomeCompleto) {
-      this.nomeCompleto = nomeCompleto;
+
+
+  public String getNomeCompleto(String nomeCompleto){
+    return nomeCompleto;
+  }
+
+  public String getTelefone(String telefone){
+    return telefone;
+  }
+
+  public String getEmail(String email){
+    return email;
   }
 }
