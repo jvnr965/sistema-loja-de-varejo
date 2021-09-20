@@ -31,6 +31,12 @@ public class Main {
     Transportadora transportadora = new Transportadora("Nexus Transportadora", "05.229.720/0001-47", "contato@nexustransportadora.com");
     transportadora.setTelefone("(71) 99201-4094");
 
-
+    System.out.println(cliente);
+    System.out.println(vendedor);
+    System.out.println(produto);
+    System.out.println(estoque);
+    System.out.println(venda);
+    System.out.println(fornecedor);
+    System.out.println(transportadora);
   }
 }

@@ -13,6 +13,26 @@ public class Vendedor {
     this.telefone = telefone;
   }
 
+  public String getNomeCompleto(){
+    return nomeCompleto;
+  }
+
+  public int getSalario(){
+    return salario;
+  }
+
+  public LocalDate getNascimento(){
+    return nascimento;
+  }
+
+  public String getEmail(){
+    return email;
+  }
+
+  public String getTelefone(){
+    return telefone;
+  }
+
   public void setSalario(int salario){
     this.salario = salario;
   }
@@ -21,23 +41,9 @@ public class Vendedor {
     this.nascimento = nascimento;
   }
 
-  public String getNomeCompleto(String nomeCompleto){
-    return nomeCompleto;
-  }
-
-  public int getSalario(int salario){
-    return salario;
-  }
-
-  public LocalDate getNascimento(LocalDate nascimento){
-    return nascimento;
-  }
-
-  public String getEmail(String email){
-    return email;
-  }
-
-  public String getTelefone(String telefone){
-    return telefone;
+  
+  @Override
+  public String toString(){
+    return String.format("-Vendedor-\nNomeCompleto: %s\nSalario: %s\nNascimento: %s\nEmail: %s\nTelefone: %s\n-----" ,this.nomeCompleto, this.salario, this.nascimento, this.email, this.telefone);
   }
 }

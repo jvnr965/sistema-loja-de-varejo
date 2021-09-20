@@ -10,24 +10,29 @@ public class Transportadora {
     this.email = email;
   }
 
-  public String getCnpj() {
-      return cnpj;
+  public String getNome(){
+    return nome;
   }
 
-  public String getNome() {
-      return nome;
+  public String getCnpj(){
+    return cnpj;
   }
 
-  public String getEmail() {
-      return email;
+  public String getTelefone(){
+    return telefone;
   }
 
-  public String getTelefone() {
-      return telefone;
+  public String getEmail(){
+    return email;
   }
 
-  public void setTelefone(String telefone) {
-      this.telefone = telefone;
+  public void setTelefone(String telefone){
+    this.telefone = telefone;
   }
 
+
+  @Override
+  public String toString(){
+    return String.format("-Transportadora-\nNome: %s\nCnpj: %s\nTelefone: %s\nEmail: %s\n-----" ,this.nome, this.cnpj, this.telefone, this.email);
+  }
 }

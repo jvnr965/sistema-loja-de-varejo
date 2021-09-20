@@ -13,36 +13,49 @@ public class Cliente{
     this.email = email;
   }
 
-  public String getEndereco() {
-      return endereco;
+  public String getNomeCompleto(){
+    return nomeCompleto;
   }
 
-
-  public LocalDate getNascimento() {
-      return nascimento;
+  public String getTelefone(){
+    return telefone;
   }
 
-
-  public void setEndereco(String endereco) {
-      this.endereco = endereco;
+  public String getEndereco(){
+    return endereco;
   }
 
+  public String getEmail(){
+    return email;
+  }
+
+  public LocalDate getNascimento(){
+    return nascimento;
+  }
+
+  public void setNomeCompleto(String nomeCompleto) {
+      this.nomeCompleto = nomeCompleto;
+  }
 
   public void setNascimento(LocalDate nascimento) {
       this.nascimento = nascimento;
   }
 
-
-
-  public String getNomeCompleto(String nomeCompleto){
-    return nomeCompleto;
+  public void setTelefone(String telefone) {
+      this.telefone = telefone;
   }
 
-  public String getTelefone(String telefone){
-    return telefone;
+  public void setEndereco(String endereco) {
+      this.endereco = endereco;
   }
 
-  public String getEmail(String email){
-    return email;
+  public void setEmail(String email) {
+      this.email = email;
+  }
+
+  @Override
+  public String toString(){
+    return String.format("-Cliente-\nNome completo: %s\nTelefone: %s\nEndereco: %s\nEmail: %s\nNascimento: %s\n-----", this.nomeCompleto, this.telefone,
+        this.endereco, this.email, this.nascimento);
   }
 }

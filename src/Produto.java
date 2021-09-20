@@ -10,36 +10,42 @@ public class Produto{
     this.fabricante = fabricante;
   }
 
-  public String getNome() {
-      return nome;
+  public String getNome(){
+    return nome;
   }
 
-  public Double getPreco() {
-      return preco;
+  public String getDescricao(){
+    return descricao;
   }
 
-  public String getCategoria() {
-      return categoria;
+  public Double getPreco(){
+    return preco;
   }
 
-  public String getDescricao() {
-      return descricao;
+  public String getCategoria(){
+    return categoria;
   }
 
-  public String getFabricante() {
-      return fabricante;
+  public String getFabricante(){
+    return fabricante;
   }
 
-  public void setPreco(Double preco) {
-      this.preco = preco;
+  public void setDescricao(String descricao){
+    this.descricao = descricao;
   }
 
-  public void setCategoria(String categoria) {
-      this.categoria = categoria;
+  public void setPreco(Double preco){
+    this.preco = preco;
   }
 
-  public void setDescricao(String descricao) {
-      this.descricao = descricao;
+  public void setCategoria(String categoria){
+    this.categoria = categoria;
   }
 
+
+  @Override
+  public String toString(){
+    return String.format("-Produto-\nNome: %s\nDescricao: %s\nPreco: %s\nCategoria: %s\nFabricante: %s\n-----",
+        this.nome, this.descricao, this.preco, this.categoria, this.fabricante);
+  }
 }
